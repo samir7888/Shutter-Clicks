@@ -1,10 +1,10 @@
 ﻿import type { Metadata, Viewport } from 'next';
-import { Analytics } from "@vercel/analytics/next"
 import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource/courier-prime/400.css';
 import '@fontsource/courier-prime/700.css';
 import './globals.css';
 
+import { Analytics } from "@vercel/analytics/next"
 const BASE_URL = 'https://shutter-clicks.vercel.app';
 
 export const metadata: Metadata = {
