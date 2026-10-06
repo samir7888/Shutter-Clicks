@@ -1,4 +1,5 @@
 ﻿import type { Metadata, Viewport } from 'next';
+import { Analytics } from "@vercel/analytics/next"
 import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource/courier-prime/400.css';
 import '@fontsource/courier-prime/700.css';
@@ -178,7 +179,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>{children}
+        <Analytics /> 
+      </body>
     </html>
   );
 }
